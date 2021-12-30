@@ -54,13 +54,9 @@ public class User implements Serializable{
 			inverseJoinColumns = @JoinColumn(name = "role_id")) //busca cual es el Id del objeto rol y lo asigna como clave foranea
 	private Set<Role> roles; // Creamos, donde se van a almacenar los roles (colección que no guarda valores repetidos)
 	
-	
-
 	public User() {
 		super();
 	}
-	
-	
 
 	public User(Long id) {
 		super();

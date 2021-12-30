@@ -1,0 +1,65 @@
+body{
+    background: url(../img/background.jpg) no-repeat center center fixed; /* indicamos que la imagen no se repita y que este centrado verticalmente y horizontalmente */
+                                                                          /* y con fixed le decimos que el tamaño se ajuste */
+    background-size: cover; /* para cubra completamente el area */
+}   
+
+.main-section{
+    margin: 0 auto;  /* centramos el form */
+    margin-top: 25%;
+    padding: 0;
+}
+
+.modal-content{
+    background-color: #3b4652;
+    opacity: .85;
+    padding: 0 20px;
+    box-shadow: 0px 0px 3px #848484;
+}
+
+.user-img{
+    margin-top: -50px; /* para que la imagen suba un poco */
+    margin-bottom: 35px; /* para que no se pegue con los otros elementos */
+}
+
+.user-img img{
+    width: 135px;
+    height: 100px;
+}
+
+.form-group input{
+    height: 45px;
+    font-size: 18px;
+    border: 0;
+    padding-left: 54px;
+    border-radius: 5px;
+}
+
+.form-group::before{
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute; /* traemos la librería de iconos y position mete los iconos en los inputs */
+    left: 28px;
+    font-size: 22px;
+    padding-top: 4px;
+}
+
+.form-group#user-group::before{  /* numeral hace referencia a los id */
+    content: "\f007";
+}
+
+.form-group#contrasena-group::before{
+    content: "\f023";
+}
+
+button{
+    width: 60%;
+    margin: 5px 0 25px;
+}
+
+.forgot{
+    padding: 5px 0;
+}
+
+.forgot a{
+    color: white;
+}
