@@ -18,7 +18,6 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.validator.constraints.NotBlank;
-import org.springframework.lang.NonNull;
 
 @Entity
 public class User implements Serializable{
@@ -55,7 +54,6 @@ public class User implements Serializable{
 	private String password;
 	
 	@Transient
-	@NotBlank
 	private String confirmPassword;
 	
 	@ManyToMany(fetch = FetchType.LAZY)
